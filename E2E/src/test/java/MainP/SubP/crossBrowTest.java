@@ -34,7 +34,7 @@ public class crossBrowTest {
 		driver.get("https://www.usps.com/");
 		driver.manage().window().maximize();
 		System.out.println("facebook login successfully");
-		driver.getTitle();
+		System.out.println(driver.getTitle());
 		
 	
 		
