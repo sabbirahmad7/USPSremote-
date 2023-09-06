@@ -1,5 +1,6 @@
 package MainP.SubP;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
@@ -17,7 +18,7 @@ public class crossBrowTest {
 	public WebDriver driver;
 	
 	@Test 
-	public void setup() {
+	public void setup() throws MalformedURLException {
 		
 		String url = "saucelabs driver creation url";
 		
@@ -27,6 +28,7 @@ public class crossBrowTest {
 		
 		// for communication
 		//passed the capability information through cap
+		//opens on saucelabs runs the desired platform and version
 		
 		WebDriver driver = new RemoteWebDriver(new URL(url),cap);
 		
